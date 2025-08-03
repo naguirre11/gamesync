@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameSync - Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .feature h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 GameSync</h1>
+        <p class="subtitle">Collaborative Game Recommendation Platform</p>
+        <p class="description">
+            Transform gaming group decisions from frustration into engaging discovery. 
+            Find the perfect game for your group in under 5 minutes.
+        </p>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>⚡ Speed</h3>
+                <p>From "what to play?" to playing in under 5 minutes</p>
+            </div>
+            <div class="feature">
+                <h3>👥 Inclusion</h3>
+                <p>Everyone's preferences matter and are visible</p>
+            </div>
+            <div class="feature">
+                <h3>🧠 Intelligence</h3>
+                <p>Learn group patterns to improve suggestions</p>
+            </div>
+            <div class="feature">
+                <h3>🔄 Flexibility</h3>
+                <p>Works with any gaming platform</p>
+            </div>
+        </div>
+        
+        <p style="margin-top: 2rem; opacity: 0.7; font-size: 0.9rem;">
+            MVP coming soon • Built for mobile-first collaboration
+        </p>
+    </div>
+</body>
+</html>
