@@ -1,0 +1,50 @@
+{
+  "name": "gamesync",
+  "version": "1.0.0",
+  "description": "Collaborative Game Recommendation Platform - MVP",
+  "type": "module",
+  "main": "src/services/steamApi.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "verify": "node verify_steam_integration.js",
+    "verify:verbose": "node verify_steam_integration.js --verbose",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "lint": "eslint src/ tests/",
+    "lint:fix": "eslint src/ tests/ --fix"
+  },
+  "keywords": [
+    "gaming",
+    "recommendations",
+    "steam",
+    "collaborative",
+    "games"
+  ],
+  "author": "GameSync Team",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.57.0",
+    "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {},
+    "extensionsToTreatAsEsm": [".js"],
+    "globals": {
+      "ts-jest": {
+        "useESM": true
+      }
+    },
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
